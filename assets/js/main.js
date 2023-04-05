@@ -40,6 +40,7 @@ function getBingImages(imgUrls) {
 	else index++;
 	var imgUrl = imgUrls[index];
 	var url = "https://www.bing.com" + imgUrl;
+	console.log(url); 
 	$panel.css("background", "url('" + url + "') center center no-repeat #666");
 	$panel.css("background-size", "cover");
 	sessionStorage.setItem(indexName, index);
