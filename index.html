@@ -129,10 +129,13 @@
     </header>
     <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/YoghurtGuy/home/assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="https://fastly.jsdelivr.net/gh/YoghurtGuy/home/assets/js/main.js"></script>
-    <script type="text/javascript" src="./assets/json/images.json?cb=getBingImages"></script>
+    <!-- <<script type="text/javascript" src="./assets/json/images.json?cb=getBingImages"></script> -->
 </body>
 </html>
 <script>
+    var url = "https://api.bimg.cc/today?w=1920&h=1080&mkt=zh-CN";
+	panel.style.background = "url('" + url + "') center center no-repeat #666";
+	panel.style.backgroundSize = "cover";
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
